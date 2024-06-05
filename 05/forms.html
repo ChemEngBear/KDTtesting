@@ -4,6 +4,97 @@
         <title> HTML의 폼 테그</title>
     </head>
     <body>
-        <input>
+        <!-- <div>
+            국가를 선택해 주세요.
+            <select multiple>  multiple이 없으면 하나만 선택 가능  -->
+                <!-- <option>대한민국</option>
+                <option>중국</option>
+                <option>일본</option>
+                <option>미국</option>
+                <option>영국</option>
+                <option>프랑스</option>
+                <option>케나다</option>
+            </select>
+            <br><br>            
+        </div> -->
+       
+
+
+        <form method="get">
+            <label for="name"> 이름:</label><input id="name"> <br><br>
+            <label for="age"> 나이:</label><input id="age" type="number" min="0"> <br><br>
+            <label for="email"> 이메일:</label><input id="email" type="email"> <br><br>
+            <label for="birth"> 생년월일:</label><input id="birth" type="date"> <br><br>
+            <label for="country"> 국적:</label>
+            <select id="country">  
+                <option>대한민국</option>
+                <option>중국</option>
+                <option>일본</option>
+                <option>미국</option>
+                <option>영국</option>
+                <option>프랑스</option>
+                <option>케나다</option>
+            </select>
+            <br><br>
+            <button for="reset"> 초기화</button>
+            <button for="submit"> 보내기</button>
+          
+
+        </form>
+       
+        <div>
+            국가를 선택해 주세요.
+        </div>
+        <input list="dataList">
+        <datalist id="dataList">
+            <option value="대한민국"></option>
+            <option value="중국"></option>
+            <option value="미국"></option>
+            <option value="영국"></option>
+            <option value="프랑스"></option>
+            <option value="케나다"></option>
+        </datalist>
+            
+            <br><br>
+            
+        </div>
+
+
+
+
+
+
+
+
+        <textarea></textarea> <!--여러 줄의 텍스트를 입력할 수 있는 상자 생성 -->
+        <br><br>
+        <textarea>기본값은 이렇습니다 $#13;그리고</textarea>
+        <label>이름: </label><input id="xxx" type="text" 
+        value="기본값">  <!-- required를 넣으면 값이 충족되지 않으면 경고 메세지 출력-->
+        
+        <label for="email"> 이메일: </label>
+        <input placeholder="ehdgus5655@gmail.com">  <!-- 새로운 빈칸이 위의 칸의 바로 옆에 생성-->
+        <br><br> <!-- placeholder는 해당되는 텍스트가 미리 담겨있는 빈 칸 생성-->
+        <input type="color" disabled> <!-- disabled 를 하면 선택할 수 없는 상태가 됨, js를 통한 연산으로 다시 활성화 가능-->
+        <br><br> <!-- required를 넣으면 값이 충족되지 않으면 경고 메세지 출력-->
+        <input type="date" value="2024-06-03">
+        <br><br> <!-- required를 넣으면 값이 충족되지 않으면 경고 메세지 출력-->
+        <input type="datetime-local">
+        <br><br>  <!-- required를 넣으면 값이 충족되지 않으면 경고 메세지 출력-->
+        <input type="password">
+        <br><br>  <!-- required를 넣으면 값이 충족되지 않으면 경고 메세지 출력-->
+        <input type="file">
+        <br><br>  <!-- 파일을 선택해서 올릴 수 있는 인풋 형식-->
+        <input type="file" multiple>
+        <br><br>  <!-- 여러 개의 파일을 선택할 수 있는 코딩-->
+        <input type="email" >
+        <br><br>  <!-- 스마트폰 화면에서 클릭하면 이메일 입력용 자판이 나오는 코드-->
+        <input type="radio" name="@"> 남성
+        <input type="radio" name="@"> 여성 
+        <input type="radio" name="@"> 혼성 
+        <br><br>
+        <input type="checkbox" > 약관에 동의합니다. 
     </body>
 </html>
+
+<!-- -->
