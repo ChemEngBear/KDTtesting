@@ -1,0 +1,53 @@
+<style>
+    h1 {
+        background: beige;
+    }
+    h2 {
+        width: 50%;
+        background: aquamarine;
+    }
+    h3 {
+        width: 100px;
+        background: antiquewhite;
+    }
+</style>
+
+<h1>기본적으로는 100% 입니다.</h1>
+<h2>50%이니까 반만 차지합니다.</h2>
+<h3>100px만 차지압니다.</h3>
+<div> 보통은 width는 %만 사용합니다. 절댓값으로 하게 되면 너무 큰 값을 사용하게 되면 가로 스크롤을 많이 해야 다음 내요을 확인가능한다.</div>
+
+
+<form method="get" action="https://httpbin.org/get">
+    <label for = "name">이름</label> <input ID="name" name="name"><br>
+    <label for = "age">나이 </label> <input id="age" name="age" type="number" min="0"><br>
+    <label for = "email">이메일 </label> <input id="email" name="email" type="email"><br>
+    <label for = "birth">생년월일 </label> <input id="birth" name="birth" type="date" ><br>
+    <label for = "country">국가</label> 
+    <select id="country" name="country">
+        <option>대한민국</option>
+        <option>중국</option>
+        <option>미국</option>
+    </select>
+    <br><br>
+    <button type ="reset">초기화</button>
+    <button type ="submit">제출</button>
+
+</form>
+
+<form method="post" action="https://httpbin.org/get">
+    <label for = "name">이름</label> <input ID="name" name="name"><br>
+    <label for = "age">나이 </label> <input id="age" name="age" type="number" min="0"><br>
+    <label for = "email">이메일 </label> <input id="email" name="email" type="email"><br>
+    <label for = "birth">생년월일 </label> <input id="birth" name="birth" type="date" ><br>
+    <label for = "country">국가</label> 
+    <select id="country" name="country">
+        <option>대한민국</option>
+        <option>중국</option>
+        <option>미국</option>
+    </select>
+    <br><br>
+    <button type ="reset">초기화</button>
+    <button type ="submit">제출</button>
+
+</form>
