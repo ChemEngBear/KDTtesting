@@ -1,0 +1,209 @@
+<!-- <style>
+    /* 전체 선택자*/
+    * {
+        font-size: 20px;
+        color: blueviolet;
+    }
+    div {
+        color: red;
+        background-color: beige;
+        height: 50px;
+    }
+    span {
+        color: blue;
+         font-size: 5px;
+    }
+</style>
+
+<div>
+    div 태그는 빨간색
+    <br>
+    <span> span 태그는 파란색</span>
+    <br>하면 가장 가까운 스타일이 적욛된다.
+</div>
+ -->
+
+ <!-- <style>
+    .square {
+        width: 100px;
+        height: 100px;
+    }
+    #bluebox {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        color: white;
+    }
+    #redBox {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+</style>
+
+<div id="bluebox">
+    내 아이디는 box
+</div> /#blueBox
+
+
+<div id="redBox">
+    내 아이디는 box
+</div> /#redBox -->
+
+
+
+<!-- <style>
+    .square {
+        width: 100px;
+        height: 100px;
+    }
+    #bluebox {
+        background-color: blue;
+        color: white;
+    }
+    #redBox {
+        background-color: red;
+    }
+</style>
+
+<div id="bluebox" class="square">
+    내 아이디는 box 위와 같은 도형 구현한 것임
+</div> /#blueBox.square
+
+
+<div id="redBox" class="square">
+    내 아이디는 box
+</div> /#redBox.square -->
+
+
+<!-- <style>
+    .red {
+        color:red;
+    }
+    .bg-yellow {
+        background-color: yellow;
+    }
+    .font-lg {
+        font-size: 20px;
+    }
+    
+</style>
+
+<div>
+    코드는 <span class="red">이해하면서 따라해야</span>합니다. <br>
+    책을 읽는 사람 모두 <span class="font-lg bg-yellw"> </span>ㅓㅅ진 웹사이트</div>
+</div> -->
+
+
+
+<!-- <style>
+   *[href] {
+        background-color: yellow;
+        color: black;
+    }
+   a[href='https://www.naver.com'] {
+        background-color: green;
+        color: white;
+    }
+    a[href='https://www.google.com'] {
+    background-color: red;
+    color: white;
+    }
+</style>
+
+<a href="https://www.naver.com">네이버 접속</a>
+
+<div href="">난 div 태그인데?</div>
+
+<a href="https://www.google.com">구글 접속</a> -->
+
+
+
+
+<!-- <style>
+    .colorful-box {
+        width:  100px;
+        height:  100px;
+        background-color:  red;
+    }
+
+    .colorful-box:hover {
+        background-color:  blue;
+    }
+    button:active {
+        background-color: aqua;
+    }
+</style>
+
+<div class="colorful-box"></div>
+<button>아무 버튼</button> -->
+
+
+<!-- <style>
+    a:visited {
+        color: red;
+    }
+
+    .colorful-box:hover {
+        background-color:  blue;
+    }
+    button:active {
+        background-color: aqua;
+    }
+</style>
+
+<a href="https://www.daum.net">다음</a><br>
+
+<a href="https://www.google.com">구글 접속</a>  -->
+
+
+<style>
+    input {
+        outline: red;   
+    }
+    input:focus {  /* 인풋 창을 클릭했을 때 때두리를 변화시키는 것*/
+        outline: red;
+        box-shadow: 0px 0px 0px 4px red;
+    }
+    #age:hover {   /*  인폿 테그 중에서 아이디가 age인 곳에 커서를 갖다 댈 때 색을 변화시키는 것*/ 
+        outline: red;
+        box-shadow: 0px 0px 0px 4px darkorchid;
+    }
+</style>
+
+
+
+<form method="get" action="https://httpbin.org/get">
+    <label for = "name">이름</label> <input ID="name" name="name"><br>
+    <label for = "age">나이 </label> <input id="age" name="age" type="number" min="0"><br>
+    <label for = "email">이메일 </label> <input id="email" name="email" type="email"><br>
+    <label for = "birth">생년월일 </label> <input id="birth" name="birth" type="date" ><br>
+    <label for = "country">국가</label> 
+    <select id="country" name="country">
+        <option>대한민국</option>
+        <option>중국</option>
+        <option>미국</option>
+    </select>
+    <br><br>
+    <button type ="reset">초기화</button>
+    <button type ="submit">제출</button>
+
+</form>
+
+<form method="post" action="https://httpbin.org/get">
+    <label for = "name">이름</label> <input ID="name" name="name"><br>
+    <label for = "age">나이 </label> <input id="age" name="age" type="number" min="0"><br>
+    <label for = "email">이메일 </label> <input id="email" name="email" type="email"><br>
+    <label for = "birth">생년월일 </label> <input id="birth" name="birth" type="date" ><br>
+    <label for = "country">국가</label> 
+    <select id="country" name="country">
+        <option>대한민국</option>
+        <option>중국</option>
+        <option>미국</option>
+    </select>
+    <br><br>
+    <button type ="reset">초기화</button>
+    <button type ="submit">제출</button>
+
+</form>
+
