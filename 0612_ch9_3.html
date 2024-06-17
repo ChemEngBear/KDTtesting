@@ -1,0 +1,153 @@
+<!-- <style>
+    .rel {
+        position:  relative;
+        top: -40px;
+        bottom: 40px;
+        left: 40px;
+    }
+    .box {
+        width: 100px;
+        height:  100px;
+
+    }
+    .a {
+        background-color: aquamarine;
+    }
+    .b {
+        background-color: bisque;
+    }
+</style>
+
+<div class="box a">정사각형 a </div>
+<div class="box b rel">정사각형 b </div> -->
+
+<!-- 
+<style>
+  .rel {
+        position:  relative;
+        top: -40px;
+        bottom: 40px;
+        left: 40px; }
+   
+   .bigbox{
+        position:  relative;
+        width: 300px;
+        height:  300px;
+    }
+    .box {
+        width: 100px;
+        height:  100px;
+    }
+    .abs { 
+        position:  absolute;
+        top: 0px;
+        right: 0px;
+    }
+    .a {
+        background-color: aquamarine;
+    }
+    .b {
+        background-color: bisque;
+    }
+</style>
+
+<div class="box a">정사각형 a </div>
+<div class="box b rel">정사각형 b </div> -->
+
+
+
+
+<!-- 
+<style>
+    .rel {
+          position:  relative;
+          top: -40px;
+          bottom: 40px;
+          left: 40px; }
+     
+    .fixed {
+        position:  fixed;
+        top: 0;
+        left: 0;  }
+     .bigbox{
+          position:  relative;
+          width: 300px;
+          height:  300px;  }
+      .box {
+          width: 100px;
+          height:  100px;  }
+      .abs { 
+          position:  absolute;
+          top: 0px;
+          right: 0px;  }
+        .popup {
+            position: fixed;
+            top:  40%;
+            left: 40%;
+            width: 150px;
+            height:  200px;
+            background-color:  wheat;
+            border: solid 11px lightgray;
+            overflow-y: auto ;
+            
+        }  
+      .a {
+          background-color: aquamarine;
+      }
+      .b {
+          background-color: bisque;
+      }
+  </style>
+  
+  <div class="box a">정사각형 a </div>
+  <div class="box b rel">정사각형 b </div>
+
+  <div class="popup">정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b
+     정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 
+     정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b 정사각형 b  </div> -->
+
+     
+<style>
+    .layout {
+        display: flex;
+        gap: 16px;
+        max-width: 1024px;
+        margin: auto;  /*     */
+    }    
+    body {
+        background-color: rgb(248, 248, 248);
+    }
+    section {
+        width: 100%;
+        height: 1400px;
+        padding: 8px;
+        background-color:  white;        
+    }
+    aside {
+        width: 300px;
+        display: flex;
+        flex-direction:  column;
+    }
+    .box {
+        width: 300px;
+        height: 300px;
+        color: white;
+        background-color: blue;
+    }
+    .abs {
+        position: sticky;
+        top: 32px;
+        background-color: aquamarine;
+        width: 300px;
+        height: 300px;
+    }
+</style>
+
+
+<div class="layout">
+    <section>
+        <aside>
+            <div class="box"></div>
+        </aside>
+    </section>    
+</div>

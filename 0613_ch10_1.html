@@ -1,0 +1,48 @@
+<!--
+
+-->
+
+
+<style>
+    @keyframes z1 {
+        from {
+            background-color: red;
+            transform:  scale(1);
+        }
+        from {
+            transform:  scale(2);
+            background-color: blue;
+    }
+}
+    @keyframes zoom {
+            0% {
+                background-color: red;
+                transform:  scale(1) rotate(0);
+            }
+            50% {
+                background-color: red;
+                transform:  scale(1.5) rotate(90deg);
+            }
+            100% {
+                background-color: red;
+                transform:  scale(2) rotate(-270deg);
+            }
+    }
+    .ani-btn {
+        margin: 64px;
+        width: 200px;
+        text-align: center;
+        animation-name: zoom;
+        animation-duration: 3s;
+        animation-delay: 4s; /* 반복하는 횟수 */
+        animation-iteration-count: 1; /* 반복하는 횟수 */
+        animation-direction: alternate-reverse ;
+        /* animation-fill-mode: both ; */
+        animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    }
+
+</style>
+
+<div class="ani-btn" >애니메이션</div>
+<br>
+<div class="ani-btn1" >애니메이션</div>

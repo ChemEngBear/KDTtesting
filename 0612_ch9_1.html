@@ -1,0 +1,372 @@
+<!-- <style>
+    .box {
+        width: 150px;
+        height: 150px;
+        border: 2px solid blue;
+    }
+    .box ~.box { 
+        border-top:  none;
+    }
+    박스라는 클레스 뒤에 오는 클레스를 정리함
+</style>
+
+
+<div>
+    <div class="box">첫 번째 상자</div><br>
+    <div class="box">두 번째 상자</div><br>
+    <div class="box">세 번째 상자</div><br>
+</div> -->
+
+<!-- 
+<style>
+   .a +.b {
+    background-color: red;
+   }
+</style>
+
+
+    <div class="q">첫 번째 상자</div><br>
+    <div class="b">두 번째 상자</div><br>
+    <div class="c">세 번째 상자</div><br>
+ -->
+
+
+ 
+<!-- <style>
+    .box {
+        width:150px;
+        height: 150px;
+        border:  blue solid 2px;
+    }
+   .a +.b {
+     background-color: red;
+    }
+ </style>
+ 
+     <div class="q">첫 번째 상자</div><br>
+     <div class="b">두 번째 상자</div><br>
+     <div class="c">세 번째 상자</div><br>
+  -->
+ 
+
+ <!-- <style>
+    .form-wr > label {
+        font-weight: bold;
+        font-size:20px;
+    }
+    .form-wr > input {
+        font-size: 20px;
+    }
+    .form-wr > span {
+        color:red;
+    }
+ </style>
+ 
+ <div class="form-wr">
+    <label>굵은 라벨</label>
+    <input placeholder="부모요소 덕에 스타일 저그 용용">
+    <div>
+        <br>
+        <span>친자식이 아니라 선택되지 못하는구나</span></div>
+ </div> -->
+
+
+ <!-- <style>
+
+ </style>
+
+ <div> 정사각형</div>
+ <span>  span은 inline 요소라서 가로로 붙어요</span>
+ 위가 가득 차 있어서 아래로 내려와요
+ -->
+
+
+
+ <!-- <style>
+    .box {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        color: white;
+        font-size: 16px;
+
+    }
+    * {
+        font-size:  0; /* 두개의 div를 서로 붙이기 위해서 함. live server에서 확인하면 붙음*/
+    }
+ </style>
+
+<div class="box"> 첫 번쨰 </div>
+<div class="box"> 두 번쨰 </div> -->
+
+
+<!-- <style>
+    .flex {
+        display: flex;
+        border: solid 1px black;
+        padding: 16px;
+        background-color:  aquamarine;
+    }
+    .flex > div {
+        background-color: blueviolet;
+        color: white;
+        border: 1px solid black;
+        width: 15px;
+    }
+
+</style>
+<div class="flex">
+    <div>플랙스 </div>
+    <div>박스는 </div>
+    <div>인라인 보다</div>
+    <div>좋다.</div>
+</div> /.flex -->
+
+
+<!-- 
+<style>
+    .flex {
+        display: flex;
+        border: solid 1px black;
+        padding: 16px;
+        background-color:  aquamarine;
+        margin-bottom: 16px;
+    }
+    .flex-start {
+    justify-content:  flex-start;
+    }
+    .flex-end {
+    justify-content:  flex-end;
+    }
+    .flex-center {
+    justify-content:  center;
+    }
+    .flex > div {
+        background-color: blueviolet;
+        color: white;
+        border: 1px solid black;
+    }
+    .flex-space-between {
+    justify-content:  space-between; /* 아이템끼리 최대한 거리 두기 */
+    }
+    .flex-space-around {
+    justify-content:  space-around; /* 아이템 양 옆에 같은 여백 */
+    }
+    .flex-space-enevly  {
+    justify-content:  space-evenly;  /* 아이템 사이 여백 크기 일치 */
+    }
+</style>
+<div class="flex">
+    <div>플랙스 </div>
+    <div>박스는 </div>
+    <div>인라인 보다</div>
+    <div>좋다.</div>
+</div> /.flex
+
+<div class="flex flex-start">
+    <div>플랙스 </div>
+    <div>박스는 </div>
+    <div>인라인 보다</div>
+    <div>좋다.</div>
+</div> /.flex.flex-start
+
+<div class="flex flex-end">
+    <div>플랙스 </div>
+    <div>박스는 </div>
+    <div>인라인 보다</div>
+    <div>좋다.</div>
+</div> /.flex.flex-end
+
+<div class="flex flex-center">
+    <div>플랙스 </div>
+    <div>박스는 </div>
+    <div>인라인 보다</div>
+    <div>좋다.</div>
+</div> /.flex
+
+<div class="flex flex-space-between">
+    <div>플랙스 </div>
+    <div>박스는 </div>
+    <div>인라인 보다</div>
+    <div>좋다.</div>
+</div> /.flex.flex-space-between
+
+<div class="flex flex-space-around">
+    <div>플랙스 </div>
+    <div>박스는 </div>
+    <div>인라인 보다</div>
+    <div>좋다.</div>
+</div> /.flex.flex-space-around
+
+<div class="flex flex-space-enevly">
+    <div>플랙스 </div>
+    <div>박스는 </div>
+    <div>인라인 보다</div>
+    <div>좋다.</div>
+</div> /.flex -->
+
+
+
+<!-- 
+<style>
+    .flex {
+        display: flex;
+        border: solid 1px black;
+        padding: 16px;
+        background-color:  aquamarine;
+        margin-bottom: 16px;
+        height: 200px;
+    }
+    
+    .flex > div {
+        background-color: blueviolet;
+        color: white;
+        border: 1px solid black;
+        height: 100px;
+    }
+    .flex-space-between {
+    justify-content:  space-between; /* 아이템끼리 최대한 거리 두기 */
+    }
+    .flex-space-around {
+    justify-content:  space-around; /* 아이템끼리 최대한 거리 두기 */
+    }
+    .flex-center {
+    justify-content:  center; /* 아이템을 가로축에서 중앙으로 배열 */
+    }
+    .align-items-start {
+    align-items:  start; /* 아이템끼리 */
+    }
+    .align-items-end {
+    align-items:  end; /* 아이템끼리 */
+    }
+    .align-items-center {
+    align-items:  center; /* 아이템끼리 */
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+</style>
+
+
+<div class="flex flex-center">
+    <div>플랙스 </div>
+    <div>박스는 </div>
+    <div>인라인 보다</div>
+    <div>좋다.</div>
+</div> /.flex
+
+<div class="flex flex-space-between">
+    <div>플랙스 </div>
+    <div>박스는 </div>
+    <div>인라인 보다</div>
+    <div>좋다.</div>
+</div> /.flex.flex-space-between
+
+<div class="flex flex-center align-items-start">
+    <div>플랙스 </div>
+    <div>박스는 </div>
+    <div>인라인 보다</div>
+</div> /.flex.flex-space-between
+
+<div class="flex flex-center align-items-start columns">
+    <div>플랙스 </div>
+    <div>박스는 </div>
+    <div>인라인 보다</div>
+</div> /.flex.flex-center align-items-start columns
+
+<div class="flex flex-center align-items-start columns">
+    <div>플랙스 </div>
+    <div>박스는 </div>
+    <div>인라인 보다</div>
+</div> /.flex.flex-center align-items-start columns
+ -->
+
+
+
+ 
+<style>
+    .flex {
+        display: flex;
+        border: solid 1px black;
+        padding: 16px;
+        background-color:  aquamarine;
+        margin-bottom: 16px;
+        height: 200px;
+    }
+    
+    .flex > div {
+        background-color: blueviolet;
+        color: white;
+        border: 1px solid black;
+        height: 100px;
+    }
+    .flex-space-between {
+    justify-content:  space-between; /* 아이템끼리 최대한 거리 두기 */
+    }
+    .flex-space-around {
+    justify-content:  space-around; /* 아이템끼리 최대한 거리 두기 */
+    }
+    .flex-center {
+    justify-content:  center; /* 아이템을 가로축에서 중앙으로 배열 */
+    }
+    .align-items-start {
+    align-items:  start; /* 아이템끼리 */
+    }
+    .align-items-end {
+    align-items:  end; /* 아이템끼리 */
+    }
+    .align-items-center {
+    align-items:  center; /* 아이템끼리 */
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+
+    .gap {
+        gap: 8px
+    }
+</style>
+
+
+<div class="flex flex-center">
+    <div>플랙스 </div>
+    <div>박스는 </div>
+    <div>인라인 보다</div>
+    <div>좋다.</div>
+</div> /.flex
+
+<div class="flex flex-space-between">
+    <div>플랙스 </div>
+    <div>박스는 </div>
+    <div>인라인 보다</div>
+    <div>좋다.</div>
+</div> /.flex.flex-space-between
+
+<div class="flex flex-center align-items-start">
+    <div>플랙스 </div>
+    <div>박스는 </div>
+    <div>인라인 보다</div>
+</div> /.flex.flex-space-between
+
+<div class="flex flex-center align-items-start columns">
+    <div>플랙스 </div>
+    <div>박스는 </div>
+    <div>인라인 보다</div>
+</div> /.flex.flex-center align-items-start columns
+
+
+
+
+
+
+
+
+
+\
+
+</DIV>
+
+
